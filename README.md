@@ -36,7 +36,7 @@
 ```text
 BiliEnhancer/
 ├── manifest.json
-├── 128.png					# logo文件
+├── 128.png      	        # logo文件
 ├── README.md
 └── scripts/
     ├── ip-reveal.js      	# 评论 IP 属地 + 楼层
