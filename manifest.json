@@ -29,7 +29,7 @@
     },
     {
       "matches": ["https://www.bilibili.com/*"],
-      "js": ["scripts/feed-roll-history-btn.js"],
+      "js": ["scripts/feed-roll-history.js"],
       "css": ["css/feed-roll-history-btn.css"]
     }
   ],
