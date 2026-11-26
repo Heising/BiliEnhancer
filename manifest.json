@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "BiliEnhancer",
+  "version": "114.514",
+  "description": "B站增强: 视频倍速给B站增加多个倍速、移除直播间的遮罩显示、新版评论区显示 IP 属地",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.bilibili.com/video/*",
+        "https://www.bilibili.com/list/*",
+        "https://www.bilibili.com/opus/*",
+        "https://www.bilibili.com/cheese/play/*"
+      ],
+      "js": ["scripts/ip-reveal.js", "scripts/pod-link.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://live.bilibili.com/*"],
+      "js": ["scripts/remove-mask.js"]
+    },
+    {
+      "matches": ["https://www.bilibili.com/video/*"],
+      "js": ["scripts/multiple-speeds.js"]
+    }
+  ],
+  "author": "ye@heising.com",
+  "icons": {
+    "128": "128.png"
+  }
+}
