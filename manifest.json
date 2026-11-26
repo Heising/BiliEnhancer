@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "BiliEnhancer",
   "version": "114.514",
-  "description": "B站增强: B站增加多个倍速、移除直播遮罩、评论区显示 IP 属地、分 P 标签恢复右键菜单",
+  "description": "B站增强: 增加多个倍速、移除直播遮罩、评论区显示 IP 属地、分 P 标签恢复右键菜单",
   "content_scripts": [
     {
       "matches": [
