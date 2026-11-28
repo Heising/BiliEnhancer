@@ -17,6 +17,9 @@
   margin-top: 6px;
   box-sizing: border-box;
 }
+.roll-btn{
+  margin-top: 0;
+}
 
 .roll-btn svg,
 .feed-roll-back-btn svg,
