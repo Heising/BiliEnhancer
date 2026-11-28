@@ -395,6 +395,10 @@ function initFeedRollHistory() {
       return;
     }
 
+    feedRollButton.classList.add("primary-btn");
+
+    // feedRollButton.querySelector(".roll-btn-text").remove();
+
     const parent = feedRollButton.parentElement;
     let backButton = documentObject.getElementById(BACK_BUTTON_ID);
     let nextButton = documentObject.getElementById(NEXT_BUTTON_ID);

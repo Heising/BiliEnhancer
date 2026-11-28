@@ -4,6 +4,7 @@
   pointer-events: none;
 }
 
+.roll-btn,
 .feed-roll-back-btn,
 .feed-roll-next-btn {
   align-items: center;
@@ -17,6 +18,7 @@
   box-sizing: border-box;
 }
 
+.roll-btn svg,
 .feed-roll-back-btn svg,
 .feed-roll-next-btn svg {
   width: 16px !important;
@@ -29,4 +31,8 @@
 .feed-roll-next-btn svg {
   /* -1 就是镜像 x 轴 */
   transform: scaleX(-1);
+}
+
+.roll-btn-text {
+  display: none;
 }
