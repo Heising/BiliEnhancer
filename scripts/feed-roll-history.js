@@ -228,6 +228,14 @@ function initFeedRollHistory() {
     return;
   }
 
+  const feedRollButton = documentObject.querySelector(".roll-btn");
+  const feedRollButtonText = feedRollButton.querySelector(".roll-btn-text")
+  feedRollButton.classList.add("primary-btn");
+  feedRollButton.title = feedRollButtonText.textContent;
+  feedRollButton.setAttribute("aria-label", feedRollButtonText.textContent);
+
+  feedRollButton.querySelector(".roll-btn-text").remove();
+
   const history = createFeedHistory();
   let configured = false; // 用户设置里是否开启（总开关 + 换一换历史）
   let enabled = false; // 当前是否实际生效（configured 且当前在首页）
@@ -394,10 +402,6 @@ function initFeedRollHistory() {
     if (!feedRollButton?.parentElement) {
       return;
     }
-
-    feedRollButton.classList.add("primary-btn");
-
-    // feedRollButton.querySelector(".roll-btn-text").remove();
 
     const parent = feedRollButton.parentElement;
     let backButton = documentObject.getElementById(BACK_BUTTON_ID);
