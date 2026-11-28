@@ -406,7 +406,7 @@ function initFeedRollHistory() {
       backButton = createFeedRollButton(
         BACK_BUTTON_ID,
         "feed-roll-back-btn",
-        "返回上一组推荐",
+        "返回上一组",
       );
       parent.appendChild(backButton);
       backButton.addEventListener("click", handleBack);
@@ -417,7 +417,7 @@ function initFeedRollHistory() {
       nextButton = createFeedRollButton(
         NEXT_BUTTON_ID,
         "feed-roll-next-btn",
-        "前往下一组推荐",
+        "前往下一组",
       );
       parent.appendChild(nextButton);
       nextButton.addEventListener("click", handleNext);
